@@ -930,7 +930,7 @@ Resources:
       ExecutionRoleArn: !Ref IAMREXEC
       TaskRoleArn: !Ref IAMRTASK
       RuntimePlatform:
-        CpuArchitecture: X86_64
+        CpuArchitecture: ARM64
         OperatingSystemFamily: LINUX
       Volumes:
         - Name: ipfs
@@ -1085,10 +1085,11 @@ Resources:
       NetworkMode: awsvpc
       RequiresCompatibilities:
         - FARGATE
+        - FARGATE_SPOT
       ExecutionRoleArn: !Ref IAMREXEC
       TaskRoleArn: !Ref IAMRTASK
       RuntimePlatform:
-        CpuArchitecture: X86_64
+        CpuArchitecture: ARM6464
         OperatingSystemFamily: LINUX
       Volumes:
         - Name: ipfs
@@ -1254,10 +1255,11 @@ Resources:
       NetworkMode: awsvpc
       RequiresCompatibilities:
         - FARGATE
+        - FARGATE_SPOT
       ExecutionRoleArn: !Ref IAMREXEC
       TaskRoleArn: !Ref IAMRTASK
       RuntimePlatform:
-        CpuArchitecture: X86_64
+        CpuArchitecture: ARM64
         OperatingSystemFamily: LINUX
       Volumes:
         - Name: ipfs
