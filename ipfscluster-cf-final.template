@@ -910,7 +910,6 @@ Resources:
       ClusterName: !Ref "AWS::StackName"
       CapacityProviders:
         - FARGATE
-        - FARGATE_SPOT
     Metadata:
       "AWS::CloudFormation::Designer":
         id: c52aad4e-8d0b-4bea-b06f-4e8859ae9672
@@ -1085,7 +1084,6 @@ Resources:
       NetworkMode: awsvpc
       RequiresCompatibilities:
         - FARGATE
-        - FARGATE_SPOT
       ExecutionRoleArn: !Ref IAMREXEC
       TaskRoleArn: !Ref IAMRTASK
       RuntimePlatform:
@@ -1255,7 +1253,6 @@ Resources:
       NetworkMode: awsvpc
       RequiresCompatibilities:
         - FARGATE
-        - FARGATE_SPOT
       ExecutionRoleArn: !Ref IAMREXEC
       TaskRoleArn: !Ref IAMRTASK
       RuntimePlatform:
