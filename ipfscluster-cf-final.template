@@ -910,6 +910,7 @@ Resources:
       ClusterName: !Ref "AWS::StackName"
       CapacityProviders:
         - FARGATE
+        - FARGATE_SPOT
     Metadata:
       "AWS::CloudFormation::Designer":
         id: c52aad4e-8d0b-4bea-b06f-4e8859ae9672
@@ -1087,7 +1088,7 @@ Resources:
       ExecutionRoleArn: !Ref IAMREXEC
       TaskRoleArn: !Ref IAMRTASK
       RuntimePlatform:
-        CpuArchitecture: ARM6464
+        CpuArchitecture: ARM64
         OperatingSystemFamily: LINUX
       Volumes:
         - Name: ipfs
